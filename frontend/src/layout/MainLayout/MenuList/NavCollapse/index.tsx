@@ -1,4 +1,4 @@
-import { Activity, useEffect, useRef, useState, MouseEvent } from 'react';
+import { useEffect, useRef, useState, MouseEvent } from 'react';
 import { useLocation } from 'react-router-dom';
 
 // material-ui
@@ -158,7 +158,7 @@ export default function NavCollapse({ menu, level, parentId }: NavCollapseProps)
                 className={anchorEl ? 'Mui-selected' : ''}
                 onClick={(e: any) => handleClickMini(e)}
             >
-                <Activity mode={menuIcon ? 'visible' : 'hidden'}>
+                {menuIcon && (
                     <ListItemIcon
                         sx={{
                             minWidth: level === 1 ? 36 : 18,
@@ -181,7 +181,7 @@ export default function NavCollapse({ menu, level, parentId }: NavCollapseProps)
                     >
                         {menuIcon}
                     </ListItemIcon>
-                </Activity>
+                )}
                 {(drawerOpen || (!drawerOpen && level !== 1)) && (
                     <Tooltip title={menu.title as string} disableHoverListener={!hoverStatus}>
                         <ListItemText
@@ -223,7 +223,7 @@ export default function NavCollapse({ menu, level, parentId }: NavCollapseProps)
 
                 {openMini || open ? collapseIcon : <IconChevronDown stroke={1.5} size="16px" style={{ marginTop: 'auto', marginBottom: 'auto' }} />}
 
-                <Activity mode={!drawerOpen ? 'visible' : 'hidden'}>
+                {!drawerOpen && (
                     <Popper
                         open={openMini}
                         anchorEl={anchorEl}
@@ -267,11 +267,11 @@ export default function NavCollapse({ menu, level, parentId }: NavCollapseProps)
                             </Transitions>
                         )}
                     </Popper>
-                </Activity>
+                )}
             </ListItemButton>
-            <Activity mode={drawerOpen ? 'visible' : 'hidden'}>
+            {drawerOpen && (
                 <Collapse in={open} timeout="auto" unmountOnExit>
-                    <Activity mode={open ? 'visible' : 'hidden'}>
+                    {open && (
                         <List
                             disablePadding
                             sx={{
@@ -290,9 +290,9 @@ export default function NavCollapse({ menu, level, parentId }: NavCollapseProps)
                         >
                             {menus}
                         </List>
-                    </Activity>
+                    )}
                 </Collapse>
-            </Activity>
+            )}
         </>
     );
 }

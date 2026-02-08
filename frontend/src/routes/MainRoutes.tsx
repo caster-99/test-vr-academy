@@ -3,25 +3,24 @@ import { lazy } from 'react';
 // project imports
 import MainLayout from 'layout/MainLayout';
 import Loadable from 'ui-component/Loadable';
+import ProtectedRoute from 'components/ProtectedRoute';
 
-// dashboard routing
 const DashboardDefault = Loadable(lazy(() => import('views/dashboard/Default')));
-
-// teachers routing
 const TeacherList = Loadable(lazy(() => import('views/teachers/TeacherList')));
 const TeacherCreate = Loadable(lazy(() => import('views/teachers/TeacherCreate')));
-
-// courses routing
 const CourseList = Loadable(lazy(() => import('views/courses/CourseList')));
 
 // ==============================|| MAIN ROUTING ||============================== //
-
 const MainRoutes = {
     path: '/',
-    element: <MainLayout />,
+    element: (
+        <ProtectedRoute>
+            <MainLayout />
+        </ProtectedRoute>
+    ),
     children: [
         {
-            path: '/',
+            path: 'dashboard',
             element: <DashboardDefault />
         },
         {

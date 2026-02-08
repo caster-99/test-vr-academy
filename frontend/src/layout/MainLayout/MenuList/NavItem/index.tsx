@@ -1,4 +1,4 @@
-import { Activity, useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link, matchPath, useLocation } from 'react-router-dom';
 
 // material-ui
@@ -165,19 +165,19 @@ export default function NavItem({ item, level, isParents = false, setSelectedID 
                     </Tooltip>
                 )}
 
-                <Activity mode={drawerOpen && item.chip ? 'visible' : 'hidden'}>
+                {drawerOpen && item.chip && (
                     <Chip
                         color={item.chip?.color}
                         variant={(item.chip as any)?.variant}
                         size={item.chip?.size}
                         label={item.chip?.label}
                         avatar={
-                            <Activity mode={item.chip?.avatar ? 'visible' : 'hidden'}>
+                            item.chip?.avatar ? (
                                 <Avatar>{item.chip?.avatar as any}</Avatar>
-                            </Activity>
+                            ) : null
                         }
                     />
-                </Activity>
+                )}
             </ListItemButton>
         </>
     );

@@ -3,6 +3,7 @@ import { lazy } from 'react';
 // project imports
 import Loadable from 'ui-component/Loadable';
 import MinimalLayout from 'layout/MinimalLayout';
+import RedirectRoute from 'components/RedirectRoute';
 
 // maintenance routing
 const LoginPage = Loadable(lazy(() => import('views/pages/authentication/Login')));
@@ -11,14 +12,16 @@ const LoginPage = Loadable(lazy(() => import('views/pages/authentication/Login')
 
 const AuthenticationRoutes = {
     path: '/',
-    element: <MinimalLayout />,
+    element: (
+        <RedirectRoute>
+            <MinimalLayout />
+        </RedirectRoute>
+    ),
     children: [
         {
-            path: '/pages/login',
+            path: '/login',
             element: <LoginPage />
-        },
-
+        }
     ]
 };
-
 export default AuthenticationRoutes;

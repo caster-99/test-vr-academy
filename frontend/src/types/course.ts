@@ -9,3 +9,7 @@ export interface CourseType {
     name: string;
     code: string;
 }
+
+export interface CoursesState {
+  courseTypesCache: Record<number, CourseType>; // Cache por ID { 1: {id:1, name:'Matemáticas'} }
+}

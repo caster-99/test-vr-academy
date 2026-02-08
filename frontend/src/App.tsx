@@ -1,23 +1,22 @@
 import { RouterProvider } from 'react-router-dom';
-
-// routing
-import router from './routes';
+import { Provider } from 'react-redux';
+import { store } from './store';
 
 // project imports
+import router from './routes';
 import NavigationScroll from './layout/NavigationScroll';
-
 import ThemeCustomization from './themes';
 
 // ==============================|| APP ||============================== //
 
 export default function App() {
     return (
-        <ThemeCustomization>
-            <NavigationScroll>
-                <>
+        <Provider store={store}>
+            <ThemeCustomization>
+                <NavigationScroll>
                     <RouterProvider router={router} />
-                </>
-            </NavigationScroll>
-        </ThemeCustomization>
+                </NavigationScroll>
+            </ThemeCustomization>
+        </Provider>
     );
 }

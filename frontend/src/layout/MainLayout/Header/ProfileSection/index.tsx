@@ -23,6 +23,9 @@ import useConfig from 'hooks/useConfig';
 // assets
 import User1 from 'assets/images/users/user-round.svg';
 import { IconLogout, IconSettings } from '@tabler/icons-react';
+import { useAppSelector } from 'store/index';
+import { logout } from 'store/slices/authSlice';
+import { useDispatch } from 'react-redux';
 
 // ==============================|| PROFILE MENU ||============================== //
 
@@ -33,7 +36,12 @@ export default function ProfileSection() {
     } = useConfig();
 
     const [open, setOpen] = useState(false);
+    const { user } = useAppSelector((state) => state.auth);
+    const dispatch = useDispatch();
 
+    const handleLogout = () => {
+        dispatch(logout());
+    };
     /**
      * anchorRef is used on different components and specifying one type leads to other components throwing an error
      * */
@@ -67,12 +75,13 @@ export default function ProfileSection() {
                 sx={{ ml: 2, height: '48px', alignItems: 'center', borderRadius: '27px' }}
                 icon={
                     <Avatar
-                        src={User1}
+                        src={user?.photo}
                         alt="user-images"
                         sx={{
                             ...((theme as any).typography.mediumAvatar),
                             margin: '8px 0 8px 8px !important',
-                            cursor: 'pointer'
+                            cursor: 'pointer',
+                            objectFit: 'cover'
                         }}
                         ref={anchorRef}
                         aria-controls={open ? 'menu-list-grow' : undefined}
@@ -113,12 +122,11 @@ export default function ProfileSection() {
                                         <Box sx={{ p: 2, pb: 0 }}>
                                             <Stack>
                                                 <Stack direction="row" sx={{ alignItems: 'center', gap: 0.5 }}>
-                                                    <Typography variant="h4">Good Morning,</Typography>
+                                                    <Typography variant="h4">Bienvenido,</Typography>
                                                     <Typography component="span" variant="h4" sx={{ fontWeight: 400 }}>
-                                                        Johne Doe
+                                                        {user?.name}
                                                     </Typography>
                                                 </Stack>
-                                                <Typography variant="subtitle2">Project Admin</Typography>
                                             </Stack>
                                         </Box>
                                         <Box
@@ -141,11 +149,11 @@ export default function ProfileSection() {
                                                     '& .MuiListItemButton-root': { mt: 0.5 }
                                                 }}
                                             >
-                                                <ListItemButton sx={{ borderRadius: `${borderRadius}px` }}>
+                                                <ListItemButton sx={{ borderRadius: `${borderRadius}px` }} onClick={handleLogout}>
                                                     <ListItemIcon>
                                                         <IconLogout stroke={1.5} size="20px" />
                                                     </ListItemIcon>
-                                                    <ListItemText primary={<Typography variant="body2">Logout</Typography>} />
+                                                    <ListItemText primary={<Typography variant="body2">Cerrar Sesión</Typography>} />
                                                 </ListItemButton>
                                             </List>
                                         </Box>

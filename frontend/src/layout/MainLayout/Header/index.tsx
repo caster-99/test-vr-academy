@@ -49,9 +49,9 @@ export default function Header() {
                     <IconMenu2 stroke={1.5} size="20px" />
                 </Avatar>
             </Box>
-
-            {/* profile */}
-            <ProfileSection />
+            <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'flex-end' }}>
+                <ProfileSection />
+            </Box>
         </>
     );
 }

@@ -1,4 +1,4 @@
-import { Activity, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { matchPath, useLocation } from 'react-router-dom';
 
 // material-ui
@@ -142,9 +142,7 @@ export default function NavGroup({ item, lastItem, remItems, lastItemId, setSele
             </List>
 
             {/* group divider */}
-            <Activity mode={drawerOpen ? 'visible' : 'hidden'}>
-                <Divider sx={{ mt: 0.25, mb: 1.25 }} />
-            </Activity>
+            {drawerOpen && <Divider sx={{ mt: 0.25, mb: 1.25 }} />}
         </>
     );
 }

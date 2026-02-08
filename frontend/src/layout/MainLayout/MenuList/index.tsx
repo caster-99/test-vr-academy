@@ -1,4 +1,4 @@
-import { Activity, memo, useState } from 'react';
+import { memo, useState } from 'react';
 
 import Divider from '@mui/material/Divider';
 import List from '@mui/material/List';
@@ -48,9 +48,7 @@ function MenuList() {
           return (
             <List key={item.id}>
               <NavItem item={item} level={1} isParents setSelectedID={() => setSelectedID('')} />
-              <Activity mode={index !== 0 ? 'visible' : 'hidden'}>
-                <Divider sx={{ py: 0.5 }} />
-              </Activity>
+              {index !== 0 && <Divider sx={{ py: 0.5 }} />}
             </List>
           );
         }

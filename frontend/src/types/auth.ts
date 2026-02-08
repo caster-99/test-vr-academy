@@ -9,3 +9,8 @@ export interface LoginResponse {
     token: string;
     user: Auth;
 }
+
+export interface LoginFormValues {
+    username: string;
+    password: string;
+}

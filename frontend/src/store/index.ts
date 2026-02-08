@@ -1,11 +1,14 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
-
-// ==============================|| REDUX - MAIN STORE ||============================== //
-
+import authReducer from './slices/authSlice';
+import countriesReducer from './slices/countriesSlice';
+import coursesReducer from './slices/coursesSlice';
+  
 export const store = configureStore({
   reducer: {
-    // Add reducers here as needed
+    auth: authReducer,
+    countries: countriesReducer,
+    courses: coursesReducer,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
