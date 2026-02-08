@@ -8,28 +8,30 @@ import Box from '@mui/material/Box';
 // project imports
 import NavItem from './NavItem';
 import NavGroup from './NavGroup';
-import menuItems from 'menu-items';
+import menuItems from 'menu-items/index';
 
 import { useGetMenuMaster } from 'api/menu';
+
+import { NavItemType } from 'types/menu';
 
 // ==============================|| SIDEBAR MENU LIST ||============================== //
 
 function MenuList() {
   const { menuMaster } = useGetMenuMaster();
-  const drawerOpen = menuMaster.isDashboardDrawerOpened;
+  const drawerOpen = menuMaster?.isDashboardDrawerOpened;
 
   const [selectedID, setSelectedID] = useState('');
 
   const lastItem = null;
 
   let lastItemIndex = menuItems.items.length - 1;
-  let remItems = [];
-  let lastItemId;
+  let remItems: any[] = [];
+  let lastItemId: string | undefined;
 
   if (lastItem && lastItem < menuItems.items.length) {
     lastItemId = menuItems.items[lastItem - 1].id;
     lastItemIndex = lastItem - 1;
-    remItems = menuItems.items.slice(lastItem - 1, menuItems.items.length).map((item) => ({
+    remItems = menuItems.items.slice(lastItem - 1, menuItems.items.length).map((item: NavItemType) => ({
       title: item.title,
       elements: item.children,
       icon: item.icon,
@@ -39,7 +41,7 @@ function MenuList() {
     }));
   }
 
-  const navItems = menuItems.items.slice(0, lastItemIndex + 1).map((item, index) => {
+  const navItems = menuItems.items.slice(0, lastItemIndex + 1).map((item: NavItemType, index: number) => {
     switch (item.type) {
       case 'group':
         if (item.url && item.id !== lastItemId) {

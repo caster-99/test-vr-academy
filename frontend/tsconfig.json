@@ -32,6 +32,7 @@
       "contexts/*": ["contexts/*"],
       "hooks/*": ["hooks/*"],
       "layout/*": ["layout/*"],
+      "menu-items": ["menu-items/index"],
       "menu-items/*": ["menu-items/*"],
       "routes/*": ["routes/*"],
       "store/*": ["store/*"],

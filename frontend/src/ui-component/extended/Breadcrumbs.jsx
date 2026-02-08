@@ -12,7 +12,7 @@ import MuiBreadcrumbs from '@mui/material/Breadcrumbs';
 import Box from '@mui/material/Box';
 
 // project imports
-import navigation from 'menu-items';
+import navigation from 'menu-items/index';
 
 // assets
 import { IconChevronRight, IconTallymark1 } from '@tabler/icons-react';
@@ -251,10 +251,10 @@ export default function Breadcrumbs({
             card === false
               ? { mb: 3, bgcolor: 'transparent', ...sx }
               : {
-                  mb: 3,
-                  bgcolor: 'background.default',
-                  ...sx
-                }
+                mb: 3,
+                bgcolor: 'background.default',
+                ...sx
+              }
           }
           {...others}
         >

@@ -8,11 +8,15 @@ export interface AppConfig {
   borderRadius: number;
   outlinedFilled?: boolean;
   presetColor?: string;
+  miniDrawer: boolean;
+  container: boolean;
 }
 
 const config: AppConfig = {
   fontFamily: `'Roboto', sans-serif`,
-  borderRadius: 8
+  borderRadius: 8,
+  miniDrawer: false,
+  container: false
 };
 
 export default config;

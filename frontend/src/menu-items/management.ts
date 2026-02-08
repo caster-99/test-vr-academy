@@ -1,3 +1,4 @@
+import { NavItemType } from 'types/menu';
 import { IconUsers, IconUserPlus, IconBooks } from '@tabler/icons-react';
 
 // constant
@@ -5,7 +6,7 @@ const icons = { IconUsers, IconUserPlus, IconBooks };
 
 // ==============================|| MANAGEMENT MENU ITEMS ||============================== //
 
-const management = {
+const management: NavItemType = {
     id: 'management',
     title: 'Gestión',
     type: 'group',
