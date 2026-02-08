@@ -1,75 +1,94 @@
-# Getting Started with Create React App
+# Prueba Técnica - Frontend Developer (React) - Luisa Lopez
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este repositorio contiene la solución a la prueba técnica para el rol de Frontend Developer. La aplicación es un panel administrativo para la gestión de profesores, escuelas y cursos, desarrollado con React y TypeScript, basado en la plantilla Berry.
 
-## Available Scripts
+## 🚀 Instalación y Ejecución
 
-In the project directory, you can run:
+Para ejecutar el proyecto localmente, necesitarás tener instalado Node.js (v14+).
 
-### `Yarn`
+### 1. Backend
+El backend está ubicado en la carpeta `backend/`. Es necesario iniciarlo primero.
 
-Install packages
+```bash
+cd backend
+npm install
+npm start
+```
+El servidor correrá en `http://localhost:3001`.
 
-### `Yarn start`
+### 2. Frontend
+En la raíz del proyecto (carpeta principal), abre una nueva terminal:
 
-Runs the app in the development mode.\
+```bash
+npm install
+npm start
+```
+La aplicación se abrirá automáticamente en `http://localhost:3000` y se redirigirá al login si el usuario no está logueado, sino al dashboard.
 
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tecnologías Utilizadas
 
-### `yarn test`
+El proyecto fue construido utilizando el siguiente stack tecnológico:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Core**: React 18, TypeScript
+- **Estado Global**: Redux Toolkit (Limitado según requerimientos)
+- **Enrutamiento**: React Router DOM (v6)
+- **UI Framework**: Material-UI (MUI)
+- **Formularios**: Formik + Yup
+- **Peticiones HTTP**: Axios
+- **Gráficos**: ApexCharts (incluidos en la plantilla)
+- **Iconos**: Tabler Icons
 
-### `yarn build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ✅ Funcionalidades Implementadas
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 🔐 Autenticación (Parte 2)
+- Sistema completo de Login con validaciones (Formik + Yup).
+- Persistencia de sesión (Token y datos de usuario).
+- Protección de rutas privadas (Guardias de navegación).
+- Manejo de cierre de sesión.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 👨‍🏫 Gestión de Profesores (Parte 3)
+- **Listado Avanzado**: Tabla interactiva con paginación en el cliente.
+- **Búsqueda en Tiempo Real**: Input con *debounce* para filtrar profesores por nombre.
+- **Filtros en Cascada**: Selectores dependientes para País → Estado → Ciudad → Escuela.
+- **Diseño Responsive**: Adaptable a dispositivos móviles.
 
-### `yarn eject`
+### 📚 Gestión de Cursos (Parte 4)
+- **Paginación Server-Side**: Integración con endpoint paginado del backend.
+- **Filtrado por Profesor**: Visualización de materias impartidas por un profesor específico.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 👤 Detalle y Creación (Parte 5 y 6)
+- **Vista Detallada**: Perfil completo del profesor, mostrando su escuela y materias asignadas.
+- **Bonus**: Visualización de otras escuelas en el mismo estado.
+- **Formulario de Creación**: Registro de nuevos profesores con validaciones en tiempo real y selectores dinámicos.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📐 Decisiones Técnicas
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Gestión de Estado
+Siguiendo las restricciones de la prueba técnica, se dividió la gestión del estado de la siguiente manera:
+- **Redux**: Utilizado únicamente para datos globales estáticos (`Countries`) y la sesión del usuario (`Auth`).
+- **Estado Local / Hooks**: Datos dinámicos como `States`, `Cities`, `Schools`, `Teachers` y `Courses` se gestionan localmente en los componentes o mediante Custom Hooks para asegurar que siempre se obtenga la data más fresca del servidor al aplicar filtros.
 
-## Learn More
+Todo esto basado en los requerimientos de la prueba técnica. Pero tambien se incluyó un bonus que es la creación de un dashboard con gráficos y estadísticas, usando useMemo y los datos obtenidos del backend.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Arquitectura
+- Se adoptó una estructura modular basada en componentes reutilizables.
+- Se implementaron **Custom Hooks** (`useTeachers`, `useLocations`, `useCourses`) para abstraer la lógica de negocio y las llamadas a la API.
+- Uso de **TypeScript Strict Mode** para garantizar la integridad de los datos y evitar errores en tiempo de ejecución.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### UI/UX
+- Se utilizó **Skeleton Loading** para mejorar la experiencia de usuario durante la carga de datos. Ademas de Alerts de MUI para mostrar mensajes de error.
+- Diseño consistente y profesional utilizando el sistema de diseño de Material-UI.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🧪 Notas para el Evaluador
+- Las credenciales de acceso se encuentran en el README de la carpeta `backend/`, estas no se cambiaron, solo el archivo teachers.json ya que se estaba probando la creacion de profesores.
+- El proyecto cumple con todos los puntos obligatorios y los bonus sugeridos (Validaciones completas, TypeScript estricto, UI mejorada).
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
