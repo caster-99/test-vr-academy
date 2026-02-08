@@ -15,6 +15,7 @@ import { useTeachers } from 'hooks/useTeachers';
 import { useSchools } from 'hooks/useLocations';
 import { IconBooks, IconSchool, IconUsers } from '@tabler/icons-react';
 import SimpleBarChart from './SimpleBarChart';
+import TotalIncomeLightCard from 'ui-component/cards/TotalIncomeLightCard';
 
 export default function Dashboard() {
   const [isLoading, setLoading] = useState(true);
@@ -93,18 +94,16 @@ export default function Dashboard() {
           <Grid container spacing={gridSpacing} size={{ md: 12, xs: 12 }}>
             <Grid size={{ md: 6, xs: 12 }}>
               <TotalIncomeDarkCard isLoading={isLoading}
-                title={"Cantidad de profesores"}
-                value={totalTeachers}
+                label={"Cantidad de profesores"}
+                total={totalTeachers}
                 icon={<IconUsers fontSize="inherit" />}
-                color="warning.dark"
               />
             </Grid>
             <Grid size={{ md: 6, xs: 12 }}>
-              <TotalIncomeDarkCard isLoading={isLoading}
-                title={"Promedio de edad de los profesores"}
-                value={ageStats.average as number}
+              <TotalIncomeLightCard isLoading={isLoading}
+                label={"Promedio de edad de los profesores"}
+                total={ageStats.average as number}
                 icon={<IconUsers fontSize="inherit" />}
-                color="error.light"
               />
             </Grid>
           </Grid>

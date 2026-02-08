@@ -47,13 +47,12 @@ const CardWrapper = styled(MainCard)(({ theme }) => ({
 
 interface TotalIncomeDarkCardProps {
     isLoading?: boolean;
-    title: string;
-    value: number;
+    label: string;
+    total: number;
     icon: React.ReactNode;
-    color: string;
 }
 
-export default function TotalIncomeDarkCard({ isLoading, title, value, icon, color }: TotalIncomeDarkCardProps) {
+export default function TotalIncomeDarkCard({ isLoading, label, total, icon }: TotalIncomeDarkCardProps) {
     const theme = useTheme();
 
     return (
@@ -61,7 +60,7 @@ export default function TotalIncomeDarkCard({ isLoading, title, value, icon, col
             {isLoading ? (
                 <TotalIncomeCard />
             ) : (
-                <CardWrapper border={false} content={false} sx={{ bgcolor: color }}>
+                <CardWrapper border={false} content={false}  >
                     <Box sx={{ p: 2 }}>
                         <List sx={{ py: 0 }}>
                             <ListItem alignItems="center" disableGutters sx={{ py: 0 }}>
@@ -86,12 +85,12 @@ export default function TotalIncomeDarkCard({ isLoading, title, value, icon, col
                                     }}
                                     primary={
                                         <Typography variant="h4" sx={{ color: 'common.white' }}>
-                                            {value}
+                                            {total}
                                         </Typography>
                                     }
                                     secondary={
                                         <Typography variant="subtitle2" sx={{ color: 'primary.light', mt: 0.25 }}>
-                                            {title}
+                                            {label}
                                         </Typography>
                                     }
                                 />
