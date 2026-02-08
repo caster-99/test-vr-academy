@@ -127,7 +127,7 @@ export default function Breadcrumbs({
             }
             return false;
         });
-    });
+    }, [customLocation]);
 
     // item separator
     const SeparatorIcon = separator!;

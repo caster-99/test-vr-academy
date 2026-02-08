@@ -26,7 +26,7 @@ import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 const monthlyData = [{ data: [45, 66, 41, 89, 25, 44, 9, 54] }];
 const yearlyData = [{ data: [35, 44, 9, 54, 45, 66, 41, 69] }];
 
-export default function TotalOrderLineChartCard({ isLoading }) {
+export default function TotalOrderLineChartCard({ isLoading, title, value, icon, color }) {
   const theme = useTheme();
 
   const [timeValue, setTimeValue] = React.useState(false);
@@ -50,7 +50,7 @@ export default function TotalOrderLineChartCard({ isLoading }) {
           border={false}
           content={false}
           sx={{
-            bgcolor: 'primary.dark',
+            bgcolor: color,
             color: '#fff',
             overflow: 'hidden',
             position: 'relative',
@@ -86,35 +86,14 @@ export default function TotalOrderLineChartCard({ isLoading }) {
               <Avatar
                 variant="rounded"
                 sx={{
-                  ...theme.typography.largeAvatar,
                   borderRadius: 2,
                   bgcolor: 'primary.800',
                   color: 'common.white',
                   mt: 1
                 }}
               >
-                <LocalMallOutlinedIcon fontSize="inherit" />
+                {icon}
               </Avatar>
-              <Box>
-                <Button
-                  disableElevation
-                  variant={timeValue ? 'contained' : 'text'}
-                  size="small"
-                  sx={{ color: 'inherit' }}
-                  onClick={(e) => handleChangeTime(e, true)}
-                >
-                  Month
-                </Button>
-                <Button
-                  disableElevation
-                  variant={!timeValue ? 'contained' : 'text'}
-                  size="small"
-                  sx={{ color: 'inherit' }}
-                  onClick={(e) => handleChangeTime(e, false)}
-                >
-                  Year
-                </Button>
-              </Box>
             </Stack>
 
             <Grid sx={{ mb: 0.75 }}>
@@ -123,11 +102,9 @@ export default function TotalOrderLineChartCard({ isLoading }) {
                   <Box>
                     <Stack direction="row" sx={{ alignItems: 'center' }}>
                       <Typography sx={{ fontSize: '2.125rem', fontWeight: 500, mr: 1, mt: 1.75, mb: 0.75 }}>
-                        {timeValue ? '$108' : '$961'}
+                        {value}
                       </Typography>
-                      <Avatar sx={{ ...theme.typography.smallAvatar, bgcolor: 'primary.200', color: 'primary.dark' }}>
-                        <ArrowDownwardIcon fontSize="inherit" sx={{ transform: 'rotate3d(1, 1, 1, 45deg)' }} />
-                      </Avatar>
+
                     </Stack>
                     <Typography
                       sx={{
@@ -136,21 +113,11 @@ export default function TotalOrderLineChartCard({ isLoading }) {
                         color: 'primary.200'
                       }}
                     >
-                      Total Order
+                      {title}
                     </Typography>
                   </Box>
                 </Grid>
-                <Grid
-                  size={6}
-                  sx={{
-                    '.apexcharts-tooltip.apexcharts-theme-light': {
-                      color: theme.vars.palette.text.primary,
-                      background: theme.vars.palette.background.default
-                    }
-                  }}
-                >
-                  <Chart options={chartOptions} series={series} type="line" height={90} />
-                </Grid>
+
               </Grid>
             </Grid>
           </Box>

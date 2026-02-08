@@ -1,4 +1,5 @@
 import { lazy } from 'react';
+import { Navigate } from 'react-router-dom';
 
 // project imports
 import MainLayout from 'layout/MainLayout';
@@ -12,6 +13,7 @@ const CourseList = Loadable(lazy(() => import('views/courses/CourseList')));
 const TeacherView = Loadable(lazy(() => import('views/teachers/TeacherView')));
 
 // ==============================|| MAIN ROUTING ||============================== //
+
 const MainRoutes = {
     path: '/',
     element: (
@@ -20,6 +22,10 @@ const MainRoutes = {
         </ProtectedRoute>
     ),
     children: [
+        {
+            path: '/',
+            element: <Navigate to="/dashboard" replace />
+        },
         {
             path: 'dashboard',
             element: <DashboardDefault />
