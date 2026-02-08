@@ -306,5 +306,12 @@
     "lastName": "Salcedo",
     "birthDate": "1978-09-09",
     "schoolId": 15
+  },
+  {
+    "id": 45,
+    "firstName": "Luisa",
+    "lastName": "López",
+    "birthDate": "2026-02-07",
+    "schoolId": 9
   }
 ]

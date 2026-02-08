@@ -1,19 +1,14 @@
-import Typography from '@mui/material/Typography';
 import { CreateTeacherPayload } from 'types/teacher';
 import MainCard from 'ui-component/cards/MainCard';
 import * as Yup from 'yup';
-import { useDispatch } from 'react-redux';
-import { AppDispatch } from 'store';
-import { Form, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useTeachers } from 'hooks/useTeachers';
-import { Field, Formik } from 'formik';
-import CustomFormControl from 'ui-component/extended/Form/CustomFormControl';
-import { Box, Button, FormHelperText, Grid, InputLabel, MenuItem, OutlinedInput, Select, TextField } from '@mui/material';
+import { Formik } from 'formik';
+import { Box, Button, FormControl, FormHelperText, Grid, InputLabel, MenuItem, Select, TextField } from '@mui/material';
 import AnimateButton from 'ui-component/extended/AnimateButton';
 import { useSchools } from 'hooks/useLocations';
 
 const TeacherCreate = () => {
-    const dispatch = useDispatch<AppDispatch>();
     const navigate = useNavigate();
     const { createTeacher, loading, error } = useTeachers();
     const { schools } = useSchools();
@@ -26,7 +21,7 @@ const TeacherCreate = () => {
             const today = new Date();
             return date <= today;
         }),
-        schoolId: Yup.number().required('La escuela es requerida'),
+        schoolId: Yup.number().min(1, 'La escuela es requerida').required('La escuela es requerida'),
     }
     const initialValues: CreateTeacherPayload = {
         firstName: '',
@@ -47,11 +42,10 @@ const TeacherCreate = () => {
         <MainCard title="Crear Profesor">
             <Formik initialValues={initialValues} validationSchema={Yup.object(validateSchema)} onSubmit={handleSubmit}>
                 {({ errors, handleBlur, handleChange, handleSubmit, touched, values }) => (
-                    <Form onSubmit={handleSubmit}>
+                    <form onSubmit={handleSubmit}>
                         <Grid container spacing={3}>
-                            {/* Fila 1: Nombre y Apellido */}
                             <Grid size={{ xs: 12, md: 6 }}>
-                                <CustomFormControl fullWidth error={Boolean(touched.firstName && errors.firstName)}>
+                                <FormControl fullWidth error={Boolean(touched.firstName && errors.firstName)}>
                                     <TextField
                                         id="firstName"
                                         name="firstName"
@@ -59,16 +53,16 @@ const TeacherCreate = () => {
                                         onBlur={handleBlur}
                                         onChange={handleChange}
                                         label="Nombre"
-                                        variant="outlined"
+
                                     />
                                     {touched.firstName && errors.firstName && (
                                         <FormHelperText error>{errors.firstName as string}</FormHelperText>
                                     )}
-                                </CustomFormControl>
+                                </FormControl>
                             </Grid>
 
                             <Grid size={{ xs: 12, md: 6 }}>
-                                <CustomFormControl fullWidth error={Boolean(touched.lastName && errors.lastName)}>
+                                <FormControl fullWidth error={Boolean(touched.lastName && errors.lastName)}>
                                     <TextField
                                         id="lastName"
                                         name="lastName"
@@ -76,15 +70,17 @@ const TeacherCreate = () => {
                                         onBlur={handleBlur}
                                         onChange={handleChange}
                                         label="Apellido"
+
                                     />
                                     {touched.lastName && errors.lastName && (
                                         <FormHelperText error>{errors.lastName as string}</FormHelperText>
                                     )}
-                                </CustomFormControl>
+                                </FormControl>
                             </Grid>
 
                             <Grid size={{ xs: 12, md: 6 }}>
-                                <CustomFormControl fullWidth error={Boolean(touched.birthDate && errors.birthDate)}>
+                                <FormControl fullWidth error={Boolean(touched.birthDate && errors.birthDate)}>
+
                                     <TextField
                                         id="birthDate"
                                         type="date"
@@ -93,40 +89,57 @@ const TeacherCreate = () => {
                                         onBlur={handleBlur}
                                         onChange={handleChange}
                                         label="Fecha de Nacimiento"
+                                        sx={{
+                                            // when the input is focused, the label should be at the top, if not it should be in the middle
+                                            '& .MuiFormLabel-root': {
+                                                top: '-12px',
+                                            },
+                                            '& .MuiFormLabel-root.Mui-focused': {
+                                                top: '0px',
+                                            },
+
+
+                                        }}
 
                                     />
                                     {touched.birthDate && errors.birthDate && (
                                         <FormHelperText error>{errors.birthDate as string}</FormHelperText>
                                     )}
-                                </CustomFormControl>
+                                </FormControl>
                             </Grid>
 
                             <Grid size={{ xs: 12, md: 6 }}>
-                                <CustomFormControl fullWidth error={Boolean(touched.schoolId && errors.schoolId)}>
-                                    <TextField
-                                        select
-                                        fullWidth
-                                        label="Escuela"
+                                <FormControl fullWidth error={Boolean(touched.schoolId && errors.schoolId)} >
+                                    <InputLabel id="school-label">Escuela</InputLabel>
+                                    <Select
+                                        labelId="school-label"
                                         id="schoolId"
                                         name="schoolId"
                                         value={values.schoolId}
                                         onBlur={handleBlur}
                                         onChange={handleChange}
-
+                                        label="Escuela"
+                                        sx={{
+                                            '& .MuiSelect-select': {
+                                                py: '16px'
+                                            }
+                                        }}
                                     >
+                                        <MenuItem value={0} disabled>
+                                            Seleccione una escuela
+                                        </MenuItem>
                                         {schools.map((school) => (
                                             <MenuItem key={school.id} value={school.id}>
                                                 {school.name}
                                             </MenuItem>
                                         ))}
-                                    </TextField>
+                                    </Select>
                                     {touched.schoolId && errors.schoolId && (
-                                        <FormHelperText error>{errors.schoolId as string}</FormHelperText>
+                                        <FormHelperText error>{errors.schoolId}</FormHelperText>
                                     )}
-                                </CustomFormControl>
+                                </FormControl>
                             </Grid>
 
-                            {/* Botón de Acción */}
                             <Grid size={{ xs: 12 }}>
                                 <Box sx={{ mt: 3, display: 'flex', justifyContent: 'flex-end' }}>
                                     <AnimateButton>
@@ -144,7 +157,7 @@ const TeacherCreate = () => {
                                 </Box>
                             </Grid>
                         </Grid>
-                    </Form>
+                    </form>
                 )}
             </Formik>
         </MainCard>
