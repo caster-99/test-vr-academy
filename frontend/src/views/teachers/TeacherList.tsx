@@ -17,7 +17,8 @@ import {
     InputLabel,
     SelectChangeEvent,
     Button,
-    Box
+    Box,
+    TableSortLabel
 } from '@mui/material';
 import MainCard from 'ui-component/cards/MainCard';
 import { useTeachers } from 'hooks/useTeachers';
@@ -25,6 +26,7 @@ import { useCountries, useStates, useCities, useSchools } from 'hooks/useLocatio
 import { Teacher } from 'types/teacher';
 import SearchIcon from '@mui/icons-material/Search';
 import ClearIcon from '@mui/icons-material/Clear';
+import { getComparator, Order } from 'utils/clientSideSorting';
 
 const TeacherList = () => {
     const navigate = useNavigate();
@@ -39,6 +41,8 @@ const TeacherList = () => {
     const [selectedCity, setSelectedCity] = useState<number | ''>('');
     const [selectedSchool, setSelectedSchool] = useState<number | ''>('');
     const [selectedSort, setSelectedSort] = useState<number>(0);
+    const [order, setOrder] = useState<Order>('asc');
+    const [orderBy, setOrderBy] = useState<keyof Teacher>('firstName');
 
     // imports de Hooks
     const { countries } = useCountries();
@@ -116,17 +120,33 @@ const TeacherList = () => {
         return map;
     }, [allSchools]);
 
-    const displayedTeachers = teachers.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage);
+    // Ordenar los profesores (extra)
+    const sortedTeachers = useMemo(() => {
+        // Creamos una copia para no mutar el array original de Redux/Hook
+        const arrayCopy = [...teachers];
+        return arrayCopy.sort(getComparator(order, orderBy));
+    }, [teachers, order, orderBy]);
+    const displayedTeachers = useMemo(() => {
+        return sortedTeachers.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage);
+    }, [sortedTeachers, page, rowsPerPage]);
 
     const handleTeacherClick = (teacher: Teacher) => {
         navigate(`/teachers/${teacher.id}`);
     };
 
-    const handleSortChange = (event: SelectChangeEvent<number>) => {
-        const val = Number(event.target.value);
-        setSelectedSort(val);
-        setFilters(prev => ({ ...prev, sort: val }));
+    const handleRequestSort = (
+        event: React.MouseEvent<unknown>,
+        property: keyof Teacher,
+    ) => {
+        const isAsc = orderBy === property && order === 'asc';
+        setOrder(isAsc ? 'desc' : 'asc');
+        setOrderBy(property);
     };
+
+    const createSortHandler =
+        (property: keyof Teacher) => (event: React.MouseEvent<unknown>) => {
+            handleRequestSort(event, property);
+        };
 
     return (
         <MainCard title="Listado de Profesores">
@@ -226,12 +246,30 @@ const TeacherList = () => {
                     <Table sx={{ minWidth: 650 }}>
                         <TableBody>
                             <TableRow>
-                                <TableCell variant="head">Nombre</TableCell>
-                                <TableCell variant="head">Apellido</TableCell>
+                                <TableCell variant="head" sortDirection={orderBy === 'firstName' ? order : false}
+                                >
+                                    <TableSortLabel
+                                        active={orderBy === 'firstName'}
+                                        direction={orderBy === 'firstName' ? order : 'asc'}
+                                        onClick={createSortHandler('firstName')}
+                                    >
+                                        Nombre
+                                    </TableSortLabel>
+                                </TableCell>
+                                <TableCell variant="head" sortDirection={orderBy === 'lastName' ? order : false}>
+                                    <TableSortLabel
+                                        active={orderBy === 'lastName'}
+                                        direction={orderBy === 'lastName' ? order : 'asc'}
+                                        onClick={createSortHandler('lastName')}
+                                    >
+                                        Apellido
+                                    </TableSortLabel>
+                                </TableCell>
                                 <TableCell variant="head">Fecha de Nacimiento</TableCell>
                                 <TableCell variant="head">Escuela</TableCell>
                             </TableRow>
                         </TableBody>
+
                         <TableBody>
                             {loading ? (
                                 <TableRow>
