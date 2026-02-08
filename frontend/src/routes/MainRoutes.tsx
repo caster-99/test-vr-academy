@@ -9,6 +9,7 @@ const DashboardDefault = Loadable(lazy(() => import('views/dashboard/Default')))
 const TeacherList = Loadable(lazy(() => import('views/teachers/TeacherList')));
 const TeacherCreate = Loadable(lazy(() => import('views/teachers/TeacherCreate')));
 const CourseList = Loadable(lazy(() => import('views/courses/CourseList')));
+const TeacherView = Loadable(lazy(() => import('views/teachers/TeacherView')));
 
 // ==============================|| MAIN ROUTING ||============================== //
 const MainRoutes = {
@@ -26,6 +27,10 @@ const MainRoutes = {
         {
             path: 'teachers',
             element: <TeacherList />
+        },
+        {
+            path: 'teachers/:id',
+            element: <TeacherView />
         },
         {
             path: 'teachers/create',

@@ -1,17 +1,6 @@
 import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
 import api from "../../api/axiosConfig";
-
-interface AuthState {
-  token: string | null;
-  user: any | null;
-  isAuthenticated: boolean;
-}
-
-const initialState: AuthState = {
-  token: localStorage.getItem('token'),
-  user: null,
-  isAuthenticated: !!localStorage.getItem('token')
-};
+import { initialState } from 'types/auth';
 
 export const loginUser = createAsyncThunk(
     'auth/login',
@@ -26,20 +15,19 @@ export const loginUser = createAsyncThunk(
 );
 const authSlice = createSlice({
     name: 'auth',
-    initialState: {
-        token: localStorage.getItem('token'),
-        user: JSON.parse(localStorage.getItem('user') || 'null'),
-        isAuthenticated: !!localStorage.getItem('token'),
-        loading: false,
-        error: null as string | null
-    },
+    initialState,
     reducers: {
         logout: (state) => {
             state.token = null;
             state.user = null;
             state.isAuthenticated = false;
+            state.loading = false;
+            state.error = null;
             localStorage.removeItem('token');
             localStorage.removeItem('user');
+        },
+        clearError: (state) => {
+            state.error = null;
         }
     },
     extraReducers: (builder) => {
@@ -53,6 +41,7 @@ const authSlice = createSlice({
                 state.isAuthenticated = true;
                 state.token = action.payload.token;
                 state.user = action.payload.user;
+                state.error = null;
                 localStorage.setItem('token', action.payload.token);
                 localStorage.setItem('user', JSON.stringify(action.payload.user));
             })
@@ -63,5 +52,5 @@ const authSlice = createSlice({
     }
 });
 
-export const { logout } = authSlice.actions;
+export const { logout, clearError } = authSlice.actions;
 export default authSlice.reducer;
