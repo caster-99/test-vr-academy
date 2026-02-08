@@ -47,9 +47,13 @@ const CardWrapper = styled(MainCard)(({ theme }) => ({
 
 interface TotalIncomeDarkCardProps {
     isLoading?: boolean;
+    title: string;
+    value: number;
+    icon: React.ReactNode;
+    color: string;
 }
 
-export default function TotalIncomeDarkCard({ isLoading }: TotalIncomeDarkCardProps) {
+export default function TotalIncomeDarkCard({ isLoading, title, value, icon, color }: TotalIncomeDarkCardProps) {
     const theme = useTheme();
 
     return (
@@ -57,7 +61,7 @@ export default function TotalIncomeDarkCard({ isLoading }: TotalIncomeDarkCardPr
             {isLoading ? (
                 <TotalIncomeCard />
             ) : (
-                <CardWrapper border={false} content={false}>
+                <CardWrapper border={false} content={false} sx={{ bgcolor: color }}>
                     <Box sx={{ p: 2 }}>
                         <List sx={{ py: 0 }}>
                             <ListItem alignItems="center" disableGutters sx={{ py: 0 }}>
@@ -71,7 +75,7 @@ export default function TotalIncomeDarkCard({ isLoading }: TotalIncomeDarkCardPr
                                             color: 'common.white'
                                         }}
                                     >
-                                        <TableChartOutlinedIcon fontSize="inherit" />
+                                        {icon}
                                     </Avatar>
                                 </ListItemAvatar>
                                 <ListItemText
@@ -82,12 +86,12 @@ export default function TotalIncomeDarkCard({ isLoading }: TotalIncomeDarkCardPr
                                     }}
                                     primary={
                                         <Typography variant="h4" sx={{ color: 'common.white' }}>
-                                            $203k
+                                            {value}
                                         </Typography>
                                     }
                                     secondary={
                                         <Typography variant="subtitle2" sx={{ color: 'primary.light', mt: 0.25 }}>
-                                            Total Income
+                                            {title}
                                         </Typography>
                                     }
                                 />

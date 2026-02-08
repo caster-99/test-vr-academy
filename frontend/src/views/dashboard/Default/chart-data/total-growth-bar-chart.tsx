@@ -1,6 +1,8 @@
+import { ApexOptions } from 'apexcharts';
+
 // ==============================|| DASHBOARD - TOTAL GROWTH BAR CHART ||============================== //
 
-const chartOptions = {
+const chartOptions: ApexOptions = {
   chart: {
     type: 'bar',
     height: 480,
