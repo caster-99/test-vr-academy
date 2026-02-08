@@ -54,7 +54,7 @@ export default function AuthLogin() {
   const handleSubmit = async (values) => {
     const resultAction = await dispatch(loginUser(values));
     if (loginUser.fulfilled.match(resultAction)) {
-      navigate('/dashboard'); // Redirige al éxito
+      navigate('/dashboard');
     }
   }
 
