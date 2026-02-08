@@ -27,6 +27,7 @@ import { Teacher } from 'types/teacher';
 import SearchIcon from '@mui/icons-material/Search';
 import ClearIcon from '@mui/icons-material/Clear';
 import { getComparator, Order } from 'utils/clientSideSorting';
+import Loader from 'ui-component/Loader';
 
 const TeacherList = () => {
     const navigate = useNavigate();
@@ -273,7 +274,7 @@ const TeacherList = () => {
                         <TableBody>
                             {loading ? (
                                 <TableRow>
-                                    <TableCell colSpan={4} align="center">Cargando...</TableCell>
+                                    <TableCell colSpan={4} align="center"><Loader /></TableCell>
                                 </TableRow>
                             ) : displayedTeachers.length === 0 ? (
                                 <TableRow>
@@ -290,7 +291,7 @@ const TeacherList = () => {
                                         <TableCell>{teacher.firstName}</TableCell>
                                         <TableCell>{teacher.lastName}</TableCell>
                                         <TableCell>{teacher.birthDate}</TableCell>
-                                        <TableCell>{schoolMap.get(teacher.schoolId) || 'Cargando...'}</TableCell>
+                                        <TableCell>{schoolMap.get(teacher.schoolId) || <Loader />}</TableCell>
                                     </TableRow>
                                 ))
                             )}

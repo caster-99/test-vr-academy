@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 
 // material-ui
 import Grid from '@mui/material/Grid';
@@ -16,10 +16,23 @@ import { gridSpacing } from 'store/constant';
 // assets
 import StorefrontTwoToneIcon from '@mui/icons-material/StorefrontTwoTone';
 
-// ==============================|| DEFAULT DASHBOARD ||============================== //
+// hooks
+import { useCourses } from 'hooks/useCourses';
+import { useTeachers } from 'hooks/useTeachers';
 
 export default function Dashboard() {
   const [isLoading, setLoading] = useState(true);
+
+  // aqui van todos los hooks para obtener los datos usando useMemo para que no se recarguen los datos
+  const { courses } = useCourses();
+  const { teachers } = useTeachers();
+
+  // aqui van todos los useMemo para obtener los datos
+  const totalCourses = useMemo(() => courses.length, [courses]);
+  const totalTeachers = useMemo(() => teachers.length, [teachers]);
+
+
+
 
   useEffect(() => {
     setLoading(false);

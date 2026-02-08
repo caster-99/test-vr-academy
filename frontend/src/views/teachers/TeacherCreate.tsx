@@ -90,7 +90,6 @@ const TeacherCreate = () => {
                                         onChange={handleChange}
                                         label="Fecha de Nacimiento"
                                         sx={{
-                                            // when the input is focused, the label should be at the top, if not it should be in the middle
                                             '& .MuiFormLabel-root': {
                                                 top: '-12px',
                                             },
