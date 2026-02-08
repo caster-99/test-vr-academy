@@ -1,0 +1,310 @@
+[
+  {
+    "id": 1,
+    "firstName": "Daniela",
+    "lastName": "Fernández",
+    "birthDate": "1970-07-26",
+    "schoolId": 1
+  },
+  {
+    "id": 2,
+    "firstName": "Patricia",
+    "lastName": "Torres",
+    "birthDate": "1970-12-16",
+    "schoolId": 1
+  },
+  {
+    "id": 3,
+    "firstName": "Daniela",
+    "lastName": "Medina",
+    "birthDate": "1991-10-17",
+    "schoolId": 1
+  },
+  {
+    "id": 4,
+    "firstName": "Carlos",
+    "lastName": "Ortega",
+    "birthDate": "1974-12-19",
+    "schoolId": 1
+  },
+  {
+    "id": 5,
+    "firstName": "Javier",
+    "lastName": "Sánchez",
+    "birthDate": "1976-07-09",
+    "schoolId": 1
+  },
+  {
+    "id": 6,
+    "firstName": "Fernando",
+    "lastName": "Delgado",
+    "birthDate": "1982-11-09",
+    "schoolId": 2
+  },
+  {
+    "id": 7,
+    "firstName": "Ricardo",
+    "lastName": "Rodríguez",
+    "birthDate": "1992-02-22",
+    "schoolId": 2
+  },
+  {
+    "id": 8,
+    "firstName": "Miguel",
+    "lastName": "Castro",
+    "birthDate": "1978-03-19",
+    "schoolId": 2
+  },
+  {
+    "id": 9,
+    "firstName": "David",
+    "lastName": "Moreno",
+    "birthDate": "1981-01-14",
+    "schoolId": 2
+  },
+  {
+    "id": 10,
+    "firstName": "María",
+    "lastName": "Torres",
+    "birthDate": "1994-04-25",
+    "schoolId": 2
+  },
+  {
+    "id": 11,
+    "firstName": "Javier",
+    "lastName": "Díaz",
+    "birthDate": "1972-06-07",
+    "schoolId": 3
+  },
+  {
+    "id": 12,
+    "firstName": "Andrés",
+    "lastName": "Morales",
+    "birthDate": "1986-04-19",
+    "schoolId": 3
+  },
+  {
+    "id": 13,
+    "firstName": "Paola",
+    "lastName": "Delgado",
+    "birthDate": "1986-04-16",
+    "schoolId": 3
+  },
+  {
+    "id": 14,
+    "firstName": "María",
+    "lastName": "Pérez",
+    "birthDate": "1984-10-05",
+    "schoolId": 3
+  },
+  {
+    "id": 15,
+    "firstName": "Natalia",
+    "lastName": "Fernández",
+    "birthDate": "1989-06-03",
+    "schoolId": 3
+  },
+  {
+    "id": 16,
+    "firstName": "Ricardo",
+    "lastName": "Jiménez",
+    "birthDate": "1975-07-10",
+    "schoolId": 4
+  },
+  {
+    "id": 17,
+    "firstName": "Andrés",
+    "lastName": "Medina",
+    "birthDate": "1990-11-18",
+    "schoolId": 4
+  },
+  {
+    "id": 18,
+    "firstName": "Paola",
+    "lastName": "Martínez",
+    "birthDate": "1985-04-20",
+    "schoolId": 5
+  },
+  {
+    "id": 19,
+    "firstName": "Camila",
+    "lastName": "Vargas",
+    "birthDate": "1994-09-14",
+    "schoolId": 5
+  },
+  {
+    "id": 20,
+    "firstName": "Natalia",
+    "lastName": "López",
+    "birthDate": "1981-01-13",
+    "schoolId": 6
+  },
+  {
+    "id": 21,
+    "firstName": "Natalia",
+    "lastName": "Morales",
+    "birthDate": "1983-10-07",
+    "schoolId": 6
+  },
+  {
+    "id": 22,
+    "firstName": "David",
+    "lastName": "Ruiz",
+    "birthDate": "1971-12-09",
+    "schoolId": 7
+  },
+  {
+    "id": 23,
+    "firstName": "Carmen",
+    "lastName": "Moreno",
+    "birthDate": "1983-08-02",
+    "schoolId": 7
+  },
+  {
+    "id": 24,
+    "firstName": "Monica",
+    "lastName": "Suárez",
+    "birthDate": "1985-07-26",
+    "schoolId": 8
+  },
+  {
+    "id": 25,
+    "firstName": "David",
+    "lastName": "Jiménez",
+    "birthDate": "1976-10-10",
+    "schoolId": 8
+  },
+  {
+    "id": 26,
+    "firstName": "Javier",
+    "lastName": "Hernández",
+    "birthDate": "1978-10-14",
+    "schoolId": 9
+  },
+  {
+    "id": 27,
+    "firstName": "Isabel",
+    "lastName": "Martínez",
+    "birthDate": "1981-06-17",
+    "schoolId": 9
+  },
+  {
+    "id": 28,
+    "firstName": "María",
+    "lastName": "Castro",
+    "birthDate": "1990-07-04",
+    "schoolId": 10
+  },
+  {
+    "id": 29,
+    "firstName": "Sergio",
+    "lastName": "Medina",
+    "birthDate": "1978-01-01",
+    "schoolId": 10
+  },
+  {
+    "id": 30,
+    "firstName": "Natalia",
+    "lastName": "Fernández",
+    "birthDate": "1987-02-26",
+    "schoolId": 11
+  },
+  {
+    "id": 31,
+    "firstName": "Daniela",
+    "lastName": "Gutiérrez",
+    "birthDate": "1975-04-09",
+    "schoolId": 11
+  },
+  {
+    "id": 32,
+    "firstName": "Isabel",
+    "lastName": "García",
+    "birthDate": "1990-05-25",
+    "schoolId": 12
+  },
+  {
+    "id": 33,
+    "firstName": "Gabriela",
+    "lastName": "Vargas",
+    "birthDate": "1982-10-18",
+    "schoolId": 12
+  },
+  {
+    "id": 34,
+    "firstName": "Patricia",
+    "lastName": "López",
+    "birthDate": "1972-04-16",
+    "schoolId": 13
+  },
+  {
+    "id": 35,
+    "firstName": "Ana",
+    "lastName": "Suárez",
+    "birthDate": "1989-08-10",
+    "schoolId": 13
+  },
+  {
+    "id": 36,
+    "firstName": "Gabriela",
+    "lastName": "Vargas",
+    "birthDate": "1990-06-18",
+    "schoolId": 14
+  },
+  {
+    "id": 37,
+    "firstName": "Carmen",
+    "lastName": "Gutiérrez",
+    "birthDate": "1979-09-21",
+    "schoolId": 14
+  },
+  {
+    "id": 38,
+    "firstName": "Daniela",
+    "lastName": "Díaz",
+    "birthDate": "1979-01-19",
+    "schoolId": 15
+  },
+  {
+    "id": 39,
+    "firstName": "Daniela",
+    "lastName": "Gómez",
+    "birthDate": "1981-09-02",
+    "schoolId": 15
+  },
+  {
+    "id": 40,
+    "firstName": "Diego",
+    "lastName": "Jiménez",
+    "birthDate": "1983-07-07",
+    "schoolId": 16
+  },
+  {
+    "id": 41,
+    "firstName": "Andrea",
+    "lastName": "González",
+    "birthDate": "1973-04-15",
+    "schoolId": 16
+  },
+  {
+    "id": 42,
+    "firstName": "Andrea",
+    "lastName": "Mendoza",
+    "birthDate": "1984-06-25",
+    "schoolId": 17
+  },
+  {
+    "id": 43,
+    "firstName": "Laura",
+    "lastName": "Fernández",
+    "birthDate": "1981-03-08",
+    "schoolId": 17
+  },
+  {
+    "id": 44,
+    "firstName": "Hector",
+    "lastName": "Salcedo",
+    "birthDate": "1978-09-09",
+    "schoolId": 15
+  }
+]

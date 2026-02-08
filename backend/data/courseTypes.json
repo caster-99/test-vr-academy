@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "name": "Mathematics",
+    "code": "MATH"
+  },
+  {
+    "id": 2,
+    "name": "Language Arts",
+    "code": "LANG"
+  },
+  {
+    "id": 3,
+    "name": "Science",
+    "code": "SCI"
+  },
+  {
+    "id": 4,
+    "name": "Social Studies",
+    "code": "SOC"
+  },
+  {
+    "id": 5,
+    "name": "Physical Education",
+    "code": "PE"
+  },
+  {
+    "id": 6,
+    "name": "Arts",
+    "code": "ART"
+  },
+  {
+    "id": 7,
+    "name": "Music",
+    "code": "MUS"
+  },
+  {
+    "id": 8,
+    "name": "Computer Science",
+    "code": "CS"
+  },
+  {
+    "id": 9,
+    "name": "Foreign Language",
+    "code": "FL"
+  },
+  {
+    "id": 10,
+    "name": "History",
+    "code": "HIS"
+  },
+  {
+    "id": 11,
+    "name": "Geography",
+    "code": "GEO"
+  },
+  {
+    "id": 12,
+    "name": "Biology",
+    "code": "BIO"
+  },
+  {
+    "id": 13,
+    "name": "Chemistry",
+    "code": "CHEM"
+  },
+  {
+    "id": 14,
+    "name": "Physics",
+    "code": "PHY"
+  },
+  {
+    "id": 15,
+    "name": "Literature",
+    "code": "LIT"
+  },
+  {
+    "id": 16,
+    "name": "Philosophy",
+    "code": "PHIL"
+  },
+  {
+    "id": 17,
+    "name": "Psychology",
+    "code": "PSY"
+  },
+  {
+    "id": 18,
+    "name": "Economics",
+    "code": "ECON"
+  },
+  {
+    "id": 19,
+    "name": "Political Science",
+    "code": "POL"
+  },
+  {
+    "id": 20,
+    "name": "Sociology",
+    "code": "SOCIO"
+  },
+  {
+    "id": 21,
+    "name": "Anthropology",
+    "code": "ANTH"
+  },
+  {
+    "id": 22,
+    "name": "Environmental Science",
+    "code": "ENV"
+  },
+  {
+    "id": 23,
+    "name": "Astronomy",
+    "code": "ASTRO"
+  },
+  {
+    "id": 24,
+    "name": "Geology",
+    "code": "GEO"
+  },
+  {
+    "id": 25,
+    "name": "Statistics",
+    "code": "STAT"
+  },
+  {
+    "id": 26,
+    "name": "Calculus",
+    "code": "CALC"
+  },
+  {
+    "id": 27,
+    "name": "Algebra",
+    "code": "ALG"
+  },
+  {
+    "id": 28,
+    "name": "Geometry",
+    "code": "GEOM"
+  },
+  {
+    "id": 29,
+    "name": "Trigonometry",
+    "code": "TRIG"
+  },
+  {
+    "id": 30,
+    "name": "Spanish",
+    "code": "SPA"
+  },
+  {
+    "id": 31,
+    "name": "English",
+    "code": "ENG"
+  },
+  {
+    "id": 32,
+    "name": "French",
+    "code": "FRE"
+  },
+  {
+    "id": 33,
+    "name": "Italian",
+    "code": "ITA"
+  },
+  {
+    "id": 34,
+    "name": "Portuguese",
+    "code": "POR"
+  },
+  {
+    "id": 35,
+    "name": "German",
+    "code": "GER"
+  },
+  {
+    "id": 36,
+    "name": "Chinese",
+    "code": "CHI"
+  },
+  {
+    "id": 37,
+    "name": "Japanese",
+    "code": "JAP"
+  },
+  {
+    "id": 38,
+    "name": "Theater",
+    "code": "THEA"
+  },
+  {
+    "id": 39,
+    "name": "Dance",
+    "code": "DAN"
+  },
+  {
+    "id": 40,
+    "name": "Photography",
+    "code": "PHOTO"
+  },
+  {
+    "id": 41,
+    "name": "Graphic Design",
+    "code": "GD"
+  },
+  {
+    "id": 42,
+    "name": "Web Design",
+    "code": "WD"
+  },
+  {
+    "id": 43,
+    "name": "Programming",
+    "code": "PROG"
+  },
+  {
+    "id": 44,
+    "name": "Database Management",
+    "code": "DB"
+  },
+  {
+    "id": 45,
+    "name": "Network Security",
+    "code": "NETSEC"
+  },
+  {
+    "id": 46,
+    "name": "Ethics",
+    "code": "ETH"
+  },
+  {
+    "id": 47,
+    "name": "Religious Studies",
+    "code": "REL"
+  },
+  {
+    "id": 48,
+    "name": "Health Education",
+    "code": "HEALTH"
+  },
+  {
+    "id": 49,
+    "name": "Nutrition",
+    "code": "NUT"
+  },
+  {
+    "id": 50,
+    "name": "Business",
+    "code": "BUS"
+  },
+  {
+    "id": 51,
+    "name": "Accounting",
+    "code": "ACC"
+  },
+  {
+    "id": 52,
+    "name": "Marketing",
+    "code": "MKT"
+  },
+  {
+    "id": 53,
+    "name": "Finance",
+    "code": "FIN"
+  },
+  {
+    "id": 54,
+    "name": "Law",
+    "code": "LAW"
+  },
+  {
+    "id": 55,
+    "name": "Journalism",
+    "code": "JOUR"
+  },
+  {
+    "id": 56,
+    "name": "Communication",
+    "code": "COMM"
+  },
+  {
+    "id": 57,
+    "name": "Architecture",
+    "code": "ARCH"
+  },
+  {
+    "id": 58,
+    "name": "Engineering",
+    "code": "ENG"
+  },
+  {
+    "id": 59,
+    "name": "Medicine",
+    "code": "MED"
+  },
+  {
+    "id": 60,
+    "name": "Veterinary Science",
+    "code": "VET"
+  }
+]

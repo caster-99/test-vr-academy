@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Bolivar",
+    "countryId": 1,
+    "code": "BO"
+  },
+  {
+    "id": 2,
+    "name": "Anzoategui",
+    "countryId": 1,
+    "code": "AN"
+  },
+  {
+    "id": 3,
+    "name": "Miranda",
+    "countryId": 1,
+    "code": "MI"
+  },
+  {
+    "id": 4,
+    "name": "Antioquia",
+    "countryId": 2,
+    "code": "AN"
+  },
+  {
+    "id": 5,
+    "name": "Cundinamarca",
+    "countryId": 2,
+    "code": "CU"
+  }
+]

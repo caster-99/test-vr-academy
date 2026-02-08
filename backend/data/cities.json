@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "name": "Ciudad Guayana",
+        "stateId": 1,
+        "alternativeName": "Puerto Ordaz"
+    },
+    {
+        "id": 2,
+        "name": "Ciudad Bolivar",
+        "stateId": 1
+    },
+    {
+        "id": 3,
+        "name": "Upata",
+        "stateId": 1
+    },
+    {
+        "id": 4,
+        "name": "Puerto La Cruz",
+        "stateId": 2
+    },
+    {
+        "id": 5,
+        "name": "Barcelona",
+        "stateId": 2
+    },
+    {
+        "id": 6,
+        "name": "Lecheria",
+        "stateId": 2
+    },
+    {
+        "id": 7,
+        "name": "Los Teques",
+        "stateId": 3
+    },
+    {
+        "id": 8,
+        "name": "Guarenas",
+        "stateId": 3
+    },
+    {
+        "id": 9,
+        "name": "Medellin",
+        "stateId": 4
+    },
+    {
+        "id": 10,
+        "name": "Bello",
+        "stateId": 4
+    },
+    {
+        "id": 11,
+        "name": "Bogota",
+        "stateId": 5
+    },
+    {
+        "id": 12,
+        "name": "Soacha",
+        "stateId": 5
+    },
+    {
+        "id": 13,
+        "name": "Chia",
+        "stateId": 5
+    }
+]

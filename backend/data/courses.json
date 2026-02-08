@@ -1,0 +1,1412 @@
+[
+  {
+    "id": 1,
+    "courseTypeId": 21,
+    "teacherId": 1
+  },
+  {
+    "id": 2,
+    "courseTypeId": 57,
+    "teacherId": 1
+  },
+  {
+    "id": 3,
+    "courseTypeId": 39,
+    "teacherId": 1
+  },
+  {
+    "id": 4,
+    "courseTypeId": 1,
+    "teacherId": 1
+  },
+  {
+    "id": 5,
+    "courseTypeId": 58,
+    "teacherId": 1
+  },
+  {
+    "id": 6,
+    "courseTypeId": 22,
+    "teacherId": 1
+  },
+  {
+    "id": 7,
+    "courseTypeId": 9,
+    "teacherId": 1
+  },
+  {
+    "id": 8,
+    "courseTypeId": 44,
+    "teacherId": 1
+  },
+  {
+    "id": 9,
+    "courseTypeId": 55,
+    "teacherId": 1
+  },
+  {
+    "id": 10,
+    "courseTypeId": 31,
+    "teacherId": 1
+  },
+  {
+    "id": 11,
+    "courseTypeId": 51,
+    "teacherId": 1
+  },
+  {
+    "id": 12,
+    "courseTypeId": 8,
+    "teacherId": 1
+  },
+  {
+    "id": 13,
+    "courseTypeId": 40,
+    "teacherId": 2
+  },
+  {
+    "id": 14,
+    "courseTypeId": 52,
+    "teacherId": 2
+  },
+  {
+    "id": 15,
+    "courseTypeId": 33,
+    "teacherId": 2
+  },
+  {
+    "id": 16,
+    "courseTypeId": 27,
+    "teacherId": 2
+  },
+  {
+    "id": 17,
+    "courseTypeId": 28,
+    "teacherId": 2
+  },
+  {
+    "id": 18,
+    "courseTypeId": 4,
+    "teacherId": 2
+  },
+  {
+    "id": 19,
+    "courseTypeId": 36,
+    "teacherId": 2
+  },
+  {
+    "id": 20,
+    "courseTypeId": 48,
+    "teacherId": 2
+  },
+  {
+    "id": 21,
+    "courseTypeId": 30,
+    "teacherId": 2
+  },
+  {
+    "id": 22,
+    "courseTypeId": 42,
+    "teacherId": 2
+  },
+  {
+    "id": 23,
+    "courseTypeId": 46,
+    "teacherId": 2
+  },
+  {
+    "id": 24,
+    "courseTypeId": 37,
+    "teacherId": 2
+  },
+  {
+    "id": 25,
+    "courseTypeId": 26,
+    "teacherId": 2
+  },
+  {
+    "id": 26,
+    "courseTypeId": 34,
+    "teacherId": 2
+  },
+  {
+    "id": 27,
+    "courseTypeId": 20,
+    "teacherId": 2
+  },
+  {
+    "id": 28,
+    "courseTypeId": 33,
+    "teacherId": 3
+  },
+  {
+    "id": 29,
+    "courseTypeId": 59,
+    "teacherId": 3
+  },
+  {
+    "id": 30,
+    "courseTypeId": 50,
+    "teacherId": 3
+  },
+  {
+    "id": 31,
+    "courseTypeId": 17,
+    "teacherId": 3
+  },
+  {
+    "id": 32,
+    "courseTypeId": 26,
+    "teacherId": 3
+  },
+  {
+    "id": 33,
+    "courseTypeId": 7,
+    "teacherId": 3
+  },
+  {
+    "id": 34,
+    "courseTypeId": 53,
+    "teacherId": 3
+  },
+  {
+    "id": 35,
+    "courseTypeId": 23,
+    "teacherId": 3
+  },
+  {
+    "id": 36,
+    "courseTypeId": 14,
+    "teacherId": 3
+  },
+  {
+    "id": 37,
+    "courseTypeId": 24,
+    "teacherId": 3
+  },
+  {
+    "id": 38,
+    "courseTypeId": 36,
+    "teacherId": 3
+  },
+  {
+    "id": 39,
+    "courseTypeId": 10,
+    "teacherId": 3
+  },
+  {
+    "id": 40,
+    "courseTypeId": 58,
+    "teacherId": 3
+  },
+  {
+    "id": 41,
+    "courseTypeId": 18,
+    "teacherId": 3
+  },
+  {
+    "id": 42,
+    "courseTypeId": 43,
+    "teacherId": 3
+  },
+  {
+    "id": 43,
+    "courseTypeId": 1,
+    "teacherId": 4
+  },
+  {
+    "id": 44,
+    "courseTypeId": 15,
+    "teacherId": 4
+  },
+  {
+    "id": 45,
+    "courseTypeId": 34,
+    "teacherId": 4
+  },
+  {
+    "id": 46,
+    "courseTypeId": 30,
+    "teacherId": 4
+  },
+  {
+    "id": 47,
+    "courseTypeId": 52,
+    "teacherId": 4
+  },
+  {
+    "id": 48,
+    "courseTypeId": 37,
+    "teacherId": 4
+  },
+  {
+    "id": 49,
+    "courseTypeId": 28,
+    "teacherId": 4
+  },
+  {
+    "id": 50,
+    "courseTypeId": 4,
+    "teacherId": 4
+  },
+  {
+    "id": 51,
+    "courseTypeId": 53,
+    "teacherId": 4
+  },
+  {
+    "id": 52,
+    "courseTypeId": 40,
+    "teacherId": 4
+  },
+  {
+    "id": 53,
+    "courseTypeId": 38,
+    "teacherId": 4
+  },
+  {
+    "id": 54,
+    "courseTypeId": 8,
+    "teacherId": 4
+  },
+  {
+    "id": 55,
+    "courseTypeId": 3,
+    "teacherId": 4
+  },
+  {
+    "id": 56,
+    "courseTypeId": 43,
+    "teacherId": 4
+  },
+  {
+    "id": 57,
+    "courseTypeId": 49,
+    "teacherId": 5
+  },
+  {
+    "id": 58,
+    "courseTypeId": 19,
+    "teacherId": 5
+  },
+  {
+    "id": 59,
+    "courseTypeId": 44,
+    "teacherId": 5
+  },
+  {
+    "id": 60,
+    "courseTypeId": 28,
+    "teacherId": 5
+  },
+  {
+    "id": 61,
+    "courseTypeId": 47,
+    "teacherId": 5
+  },
+  {
+    "id": 62,
+    "courseTypeId": 30,
+    "teacherId": 5
+  },
+  {
+    "id": 63,
+    "courseTypeId": 42,
+    "teacherId": 5
+  },
+  {
+    "id": 64,
+    "courseTypeId": 60,
+    "teacherId": 5
+  },
+  {
+    "id": 65,
+    "courseTypeId": 20,
+    "teacherId": 5
+  },
+  {
+    "id": 66,
+    "courseTypeId": 41,
+    "teacherId": 5
+  },
+  {
+    "id": 67,
+    "courseTypeId": 58,
+    "teacherId": 5
+  },
+  {
+    "id": 68,
+    "courseTypeId": 52,
+    "teacherId": 5
+  },
+  {
+    "id": 69,
+    "courseTypeId": 37,
+    "teacherId": 5
+  },
+  {
+    "id": 70,
+    "courseTypeId": 11,
+    "teacherId": 5
+  },
+  {
+    "id": 71,
+    "courseTypeId": 4,
+    "teacherId": 5
+  },
+  {
+    "id": 72,
+    "courseTypeId": 38,
+    "teacherId": 6
+  },
+  {
+    "id": 73,
+    "courseTypeId": 41,
+    "teacherId": 6
+  },
+  {
+    "id": 74,
+    "courseTypeId": 30,
+    "teacherId": 6
+  },
+  {
+    "id": 75,
+    "courseTypeId": 53,
+    "teacherId": 6
+  },
+  {
+    "id": 76,
+    "courseTypeId": 7,
+    "teacherId": 6
+  },
+  {
+    "id": 77,
+    "courseTypeId": 8,
+    "teacherId": 6
+  },
+  {
+    "id": 78,
+    "courseTypeId": 19,
+    "teacherId": 6
+  },
+  {
+    "id": 79,
+    "courseTypeId": 55,
+    "teacherId": 6
+  },
+  {
+    "id": 80,
+    "courseTypeId": 35,
+    "teacherId": 6
+  },
+  {
+    "id": 81,
+    "courseTypeId": 22,
+    "teacherId": 6
+  },
+  {
+    "id": 82,
+    "courseTypeId": 25,
+    "teacherId": 6
+  },
+  {
+    "id": 83,
+    "courseTypeId": 40,
+    "teacherId": 6
+  },
+  {
+    "id": 84,
+    "courseTypeId": 21,
+    "teacherId": 6
+  },
+  {
+    "id": 85,
+    "courseTypeId": 29,
+    "teacherId": 7
+  },
+  {
+    "id": 86,
+    "courseTypeId": 42,
+    "teacherId": 7
+  },
+  {
+    "id": 87,
+    "courseTypeId": 44,
+    "teacherId": 7
+  },
+  {
+    "id": 88,
+    "courseTypeId": 17,
+    "teacherId": 7
+  },
+  {
+    "id": 89,
+    "courseTypeId": 56,
+    "teacherId": 7
+  },
+  {
+    "id": 90,
+    "courseTypeId": 55,
+    "teacherId": 7
+  },
+  {
+    "id": 91,
+    "courseTypeId": 16,
+    "teacherId": 7
+  },
+  {
+    "id": 92,
+    "courseTypeId": 19,
+    "teacherId": 7
+  },
+  {
+    "id": 93,
+    "courseTypeId": 9,
+    "teacherId": 7
+  },
+  {
+    "id": 94,
+    "courseTypeId": 5,
+    "teacherId": 7
+  },
+  {
+    "id": 95,
+    "courseTypeId": 31,
+    "teacherId": 7
+  },
+  {
+    "id": 96,
+    "courseTypeId": 34,
+    "teacherId": 7
+  },
+  {
+    "id": 97,
+    "courseTypeId": 12,
+    "teacherId": 7
+  },
+  {
+    "id": 98,
+    "courseTypeId": 4,
+    "teacherId": 7
+  },
+  {
+    "id": 99,
+    "courseTypeId": 7,
+    "teacherId": 8
+  },
+  {
+    "id": 100,
+    "courseTypeId": 25,
+    "teacherId": 8
+  },
+  {
+    "id": 101,
+    "courseTypeId": 37,
+    "teacherId": 8
+  },
+  {
+    "id": 102,
+    "courseTypeId": 28,
+    "teacherId": 8
+  },
+  {
+    "id": 103,
+    "courseTypeId": 38,
+    "teacherId": 8
+  },
+  {
+    "id": 104,
+    "courseTypeId": 22,
+    "teacherId": 8
+  },
+  {
+    "id": 105,
+    "courseTypeId": 59,
+    "teacherId": 8
+  },
+  {
+    "id": 106,
+    "courseTypeId": 16,
+    "teacherId": 8
+  },
+  {
+    "id": 107,
+    "courseTypeId": 39,
+    "teacherId": 8
+  },
+  {
+    "id": 108,
+    "courseTypeId": 1,
+    "teacherId": 8
+  },
+  {
+    "id": 109,
+    "courseTypeId": 46,
+    "teacherId": 8
+  },
+  {
+    "id": 110,
+    "courseTypeId": 57,
+    "teacherId": 8
+  },
+  {
+    "id": 111,
+    "courseTypeId": 20,
+    "teacherId": 8
+  },
+  {
+    "id": 112,
+    "courseTypeId": 27,
+    "teacherId": 8
+  },
+  {
+    "id": 113,
+    "courseTypeId": 36,
+    "teacherId": 9
+  },
+  {
+    "id": 114,
+    "courseTypeId": 51,
+    "teacherId": 9
+  },
+  {
+    "id": 115,
+    "courseTypeId": 9,
+    "teacherId": 9
+  },
+  {
+    "id": 116,
+    "courseTypeId": 44,
+    "teacherId": 9
+  },
+  {
+    "id": 117,
+    "courseTypeId": 33,
+    "teacherId": 9
+  },
+  {
+    "id": 118,
+    "courseTypeId": 7,
+    "teacherId": 9
+  },
+  {
+    "id": 119,
+    "courseTypeId": 60,
+    "teacherId": 9
+  },
+  {
+    "id": 120,
+    "courseTypeId": 18,
+    "teacherId": 9
+  },
+  {
+    "id": 121,
+    "courseTypeId": 52,
+    "teacherId": 9
+  },
+  {
+    "id": 122,
+    "courseTypeId": 45,
+    "teacherId": 9
+  },
+  {
+    "id": 123,
+    "courseTypeId": 10,
+    "teacherId": 9
+  },
+  {
+    "id": 124,
+    "courseTypeId": 2,
+    "teacherId": 9
+  },
+  {
+    "id": 125,
+    "courseTypeId": 46,
+    "teacherId": 9
+  },
+  {
+    "id": 126,
+    "courseTypeId": 35,
+    "teacherId": 9
+  },
+  {
+    "id": 127,
+    "courseTypeId": 15,
+    "teacherId": 9
+  },
+  {
+    "id": 128,
+    "courseTypeId": 46,
+    "teacherId": 10
+  },
+  {
+    "id": 129,
+    "courseTypeId": 8,
+    "teacherId": 10
+  },
+  {
+    "id": 130,
+    "courseTypeId": 24,
+    "teacherId": 10
+  },
+  {
+    "id": 131,
+    "courseTypeId": 43,
+    "teacherId": 10
+  },
+  {
+    "id": 132,
+    "courseTypeId": 1,
+    "teacherId": 10
+  },
+  {
+    "id": 133,
+    "courseTypeId": 2,
+    "teacherId": 10
+  },
+  {
+    "id": 134,
+    "courseTypeId": 4,
+    "teacherId": 10
+  },
+  {
+    "id": 135,
+    "courseTypeId": 3,
+    "teacherId": 10
+  },
+  {
+    "id": 136,
+    "courseTypeId": 27,
+    "teacherId": 10
+  },
+  {
+    "id": 137,
+    "courseTypeId": 15,
+    "teacherId": 10
+  },
+  {
+    "id": 138,
+    "courseTypeId": 32,
+    "teacherId": 10
+  },
+  {
+    "id": 139,
+    "courseTypeId": 49,
+    "teacherId": 10
+  },
+  {
+    "id": 140,
+    "courseTypeId": 20,
+    "teacherId": 11
+  },
+  {
+    "id": 141,
+    "courseTypeId": 49,
+    "teacherId": 11
+  },
+  {
+    "id": 142,
+    "courseTypeId": 21,
+    "teacherId": 11
+  },
+  {
+    "id": 143,
+    "courseTypeId": 15,
+    "teacherId": 11
+  },
+  {
+    "id": 144,
+    "courseTypeId": 12,
+    "teacherId": 11
+  },
+  {
+    "id": 145,
+    "courseTypeId": 23,
+    "teacherId": 11
+  },
+  {
+    "id": 146,
+    "courseTypeId": 26,
+    "teacherId": 11
+  },
+  {
+    "id": 147,
+    "courseTypeId": 44,
+    "teacherId": 11
+  },
+  {
+    "id": 148,
+    "courseTypeId": 58,
+    "teacherId": 11
+  },
+  {
+    "id": 149,
+    "courseTypeId": 7,
+    "teacherId": 11
+  },
+  {
+    "id": 150,
+    "courseTypeId": 47,
+    "teacherId": 11
+  },
+  {
+    "id": 151,
+    "courseTypeId": 3,
+    "teacherId": 11
+  },
+  {
+    "id": 152,
+    "courseTypeId": 50,
+    "teacherId": 11
+  },
+  {
+    "id": 153,
+    "courseTypeId": 39,
+    "teacherId": 11
+  },
+  {
+    "id": 154,
+    "courseTypeId": 22,
+    "teacherId": 11
+  },
+  {
+    "id": 155,
+    "courseTypeId": 48,
+    "teacherId": 12
+  },
+  {
+    "id": 156,
+    "courseTypeId": 49,
+    "teacherId": 12
+  },
+  {
+    "id": 157,
+    "courseTypeId": 53,
+    "teacherId": 12
+  },
+  {
+    "id": 158,
+    "courseTypeId": 18,
+    "teacherId": 12
+  },
+  {
+    "id": 159,
+    "courseTypeId": 8,
+    "teacherId": 12
+  },
+  {
+    "id": 160,
+    "courseTypeId": 3,
+    "teacherId": 12
+  },
+  {
+    "id": 161,
+    "courseTypeId": 29,
+    "teacherId": 12
+  },
+  {
+    "id": 162,
+    "courseTypeId": 56,
+    "teacherId": 12
+  },
+  {
+    "id": 163,
+    "courseTypeId": 17,
+    "teacherId": 12
+  },
+  {
+    "id": 164,
+    "courseTypeId": 28,
+    "teacherId": 12
+  },
+  {
+    "id": 165,
+    "courseTypeId": 1,
+    "teacherId": 12
+  },
+  {
+    "id": 166,
+    "courseTypeId": 47,
+    "teacherId": 12
+  },
+  {
+    "id": 167,
+    "courseTypeId": 54,
+    "teacherId": 12
+  },
+  {
+    "id": 168,
+    "courseTypeId": 3,
+    "teacherId": 13
+  },
+  {
+    "id": 169,
+    "courseTypeId": 56,
+    "teacherId": 13
+  },
+  {
+    "id": 170,
+    "courseTypeId": 5,
+    "teacherId": 13
+  },
+  {
+    "id": 171,
+    "courseTypeId": 6,
+    "teacherId": 13
+  },
+  {
+    "id": 172,
+    "courseTypeId": 38,
+    "teacherId": 13
+  },
+  {
+    "id": 173,
+    "courseTypeId": 46,
+    "teacherId": 13
+  },
+  {
+    "id": 174,
+    "courseTypeId": 1,
+    "teacherId": 13
+  },
+  {
+    "id": 175,
+    "courseTypeId": 11,
+    "teacherId": 13
+  },
+  {
+    "id": 176,
+    "courseTypeId": 26,
+    "teacherId": 13
+  },
+  {
+    "id": 177,
+    "courseTypeId": 20,
+    "teacherId": 13
+  },
+  {
+    "id": 178,
+    "courseTypeId": 39,
+    "teacherId": 13
+  },
+  {
+    "id": 179,
+    "courseTypeId": 23,
+    "teacherId": 13
+  },
+  {
+    "id": 180,
+    "courseTypeId": 14,
+    "teacherId": 13
+  },
+  {
+    "id": 181,
+    "courseTypeId": 60,
+    "teacherId": 13
+  },
+  {
+    "id": 182,
+    "courseTypeId": 47,
+    "teacherId": 13
+  },
+  {
+    "id": 183,
+    "courseTypeId": 8,
+    "teacherId": 14
+  },
+  {
+    "id": 184,
+    "courseTypeId": 60,
+    "teacherId": 14
+  },
+  {
+    "id": 185,
+    "courseTypeId": 15,
+    "teacherId": 14
+  },
+  {
+    "id": 186,
+    "courseTypeId": 13,
+    "teacherId": 14
+  },
+  {
+    "id": 187,
+    "courseTypeId": 16,
+    "teacherId": 14
+  },
+  {
+    "id": 188,
+    "courseTypeId": 18,
+    "teacherId": 14
+  },
+  {
+    "id": 189,
+    "courseTypeId": 58,
+    "teacherId": 14
+  },
+  {
+    "id": 190,
+    "courseTypeId": 51,
+    "teacherId": 14
+  },
+  {
+    "id": 191,
+    "courseTypeId": 46,
+    "teacherId": 14
+  },
+  {
+    "id": 192,
+    "courseTypeId": 22,
+    "teacherId": 14
+  },
+  {
+    "id": 193,
+    "courseTypeId": 32,
+    "teacherId": 14
+  },
+  {
+    "id": 194,
+    "courseTypeId": 59,
+    "teacherId": 14
+  },
+  {
+    "id": 195,
+    "courseTypeId": 33,
+    "teacherId": 14
+  },
+  {
+    "id": 196,
+    "courseTypeId": 6,
+    "teacherId": 14
+  },
+  {
+    "id": 197,
+    "courseTypeId": 36,
+    "teacherId": 14
+  },
+  {
+    "id": 198,
+    "courseTypeId": 21,
+    "teacherId": 15
+  },
+  {
+    "id": 199,
+    "courseTypeId": 22,
+    "teacherId": 15
+  },
+  {
+    "id": 200,
+    "courseTypeId": 47,
+    "teacherId": 15
+  },
+  {
+    "id": 201,
+    "courseTypeId": 27,
+    "teacherId": 15
+  },
+  {
+    "id": 202,
+    "courseTypeId": 25,
+    "teacherId": 15
+  },
+  {
+    "id": 203,
+    "courseTypeId": 1,
+    "teacherId": 15
+  },
+  {
+    "id": 204,
+    "courseTypeId": 44,
+    "teacherId": 15
+  },
+  {
+    "id": 205,
+    "courseTypeId": 26,
+    "teacherId": 15
+  },
+  {
+    "id": 206,
+    "courseTypeId": 5,
+    "teacherId": 15
+  },
+  {
+    "id": 207,
+    "courseTypeId": 36,
+    "teacherId": 15
+  },
+  {
+    "id": 208,
+    "courseTypeId": 45,
+    "teacherId": 15
+  },
+  {
+    "id": 209,
+    "courseTypeId": 24,
+    "teacherId": 15
+  },
+  {
+    "id": 210,
+    "courseTypeId": 49,
+    "teacherId": 15
+  },
+  {
+    "id": 211,
+    "courseTypeId": 41,
+    "teacherId": 15
+  },
+  {
+    "id": 212,
+    "courseTypeId": 2,
+    "teacherId": 15
+  },
+  {
+    "id": 213,
+    "courseTypeId": 45,
+    "teacherId": 16
+  },
+  {
+    "id": 214,
+    "courseTypeId": 17,
+    "teacherId": 16
+  },
+  {
+    "id": 215,
+    "courseTypeId": 46,
+    "teacherId": 17
+  },
+  {
+    "id": 216,
+    "courseTypeId": 3,
+    "teacherId": 17
+  },
+  {
+    "id": 217,
+    "courseTypeId": 11,
+    "teacherId": 17
+  },
+  {
+    "id": 218,
+    "courseTypeId": 44,
+    "teacherId": 18
+  },
+  {
+    "id": 219,
+    "courseTypeId": 22,
+    "teacherId": 18
+  },
+  {
+    "id": 220,
+    "courseTypeId": 4,
+    "teacherId": 18
+  },
+  {
+    "id": 221,
+    "courseTypeId": 28,
+    "teacherId": 19
+  },
+  {
+    "id": 222,
+    "courseTypeId": 42,
+    "teacherId": 19
+  },
+  {
+    "id": 223,
+    "courseTypeId": 18,
+    "teacherId": 19
+  },
+  {
+    "id": 224,
+    "courseTypeId": 50,
+    "teacherId": 20
+  },
+  {
+    "id": 225,
+    "courseTypeId": 24,
+    "teacherId": 20
+  },
+  {
+    "id": 226,
+    "courseTypeId": 43,
+    "teacherId": 20
+  },
+  {
+    "id": 227,
+    "courseTypeId": 44,
+    "teacherId": 21
+  },
+  {
+    "id": 228,
+    "courseTypeId": 21,
+    "teacherId": 21
+  },
+  {
+    "id": 229,
+    "courseTypeId": 20,
+    "teacherId": 21
+  },
+  {
+    "id": 230,
+    "courseTypeId": 59,
+    "teacherId": 22
+  },
+  {
+    "id": 231,
+    "courseTypeId": 47,
+    "teacherId": 22
+  },
+  {
+    "id": 232,
+    "courseTypeId": 27,
+    "teacherId": 23
+  },
+  {
+    "id": 233,
+    "courseTypeId": 32,
+    "teacherId": 23
+  },
+  {
+    "id": 234,
+    "courseTypeId": 10,
+    "teacherId": 24
+  },
+  {
+    "id": 235,
+    "courseTypeId": 18,
+    "teacherId": 24
+  },
+  {
+    "id": 236,
+    "courseTypeId": 29,
+    "teacherId": 25
+  },
+  {
+    "id": 237,
+    "courseTypeId": 35,
+    "teacherId": 25
+  },
+  {
+    "id": 238,
+    "courseTypeId": 28,
+    "teacherId": 26
+  },
+  {
+    "id": 239,
+    "courseTypeId": 40,
+    "teacherId": 26
+  },
+  {
+    "id": 240,
+    "courseTypeId": 19,
+    "teacherId": 27
+  },
+  {
+    "id": 241,
+    "courseTypeId": 57,
+    "teacherId": 27
+  },
+  {
+    "id": 242,
+    "courseTypeId": 38,
+    "teacherId": 28
+  },
+  {
+    "id": 243,
+    "courseTypeId": 6,
+    "teacherId": 28
+  },
+  {
+    "id": 244,
+    "courseTypeId": 57,
+    "teacherId": 29
+  },
+  {
+    "id": 245,
+    "courseTypeId": 43,
+    "teacherId": 29
+  },
+  {
+    "id": 246,
+    "courseTypeId": 10,
+    "teacherId": 30
+  },
+  {
+    "id": 247,
+    "courseTypeId": 58,
+    "teacherId": 30
+  },
+  {
+    "id": 248,
+    "courseTypeId": 46,
+    "teacherId": 31
+  },
+  {
+    "id": 249,
+    "courseTypeId": 17,
+    "teacherId": 31
+  },
+  {
+    "id": 250,
+    "courseTypeId": 31,
+    "teacherId": 31
+  },
+  {
+    "id": 251,
+    "courseTypeId": 6,
+    "teacherId": 32
+  },
+  {
+    "id": 252,
+    "courseTypeId": 23,
+    "teacherId": 32
+  },
+  {
+    "id": 253,
+    "courseTypeId": 25,
+    "teacherId": 32
+  },
+  {
+    "id": 254,
+    "courseTypeId": 40,
+    "teacherId": 33
+  },
+  {
+    "id": 255,
+    "courseTypeId": 7,
+    "teacherId": 33
+  },
+  {
+    "id": 256,
+    "courseTypeId": 38,
+    "teacherId": 33
+  },
+  {
+    "id": 257,
+    "courseTypeId": 21,
+    "teacherId": 34
+  },
+  {
+    "id": 258,
+    "courseTypeId": 55,
+    "teacherId": 34
+  },
+  {
+    "id": 259,
+    "courseTypeId": 11,
+    "teacherId": 35
+  },
+  {
+    "id": 260,
+    "courseTypeId": 59,
+    "teacherId": 35
+  },
+  {
+    "id": 261,
+    "courseTypeId": 45,
+    "teacherId": 36
+  },
+  {
+    "id": 262,
+    "courseTypeId": 16,
+    "teacherId": 36
+  },
+  {
+    "id": 263,
+    "courseTypeId": 10,
+    "teacherId": 36
+  },
+  {
+    "id": 264,
+    "courseTypeId": 32,
+    "teacherId": 37
+  },
+  {
+    "id": 265,
+    "courseTypeId": 10,
+    "teacherId": 37
+  },
+  {
+    "id": 266,
+    "courseTypeId": 42,
+    "teacherId": 37
+  },
+  {
+    "id": 267,
+    "courseTypeId": 16,
+    "teacherId": 38
+  },
+  {
+    "id": 268,
+    "courseTypeId": 13,
+    "teacherId": 38
+  },
+  {
+    "id": 269,
+    "courseTypeId": 30,
+    "teacherId": 38
+  },
+  {
+    "id": 270,
+    "courseTypeId": 35,
+    "teacherId": 39
+  },
+  {
+    "id": 271,
+    "courseTypeId": 40,
+    "teacherId": 39
+  },
+  {
+    "id": 272,
+    "courseTypeId": 5,
+    "teacherId": 40
+  },
+  {
+    "id": 273,
+    "courseTypeId": 45,
+    "teacherId": 40
+  },
+  {
+    "id": 274,
+    "courseTypeId": 32,
+    "teacherId": 40
+  },
+  {
+    "id": 275,
+    "courseTypeId": 32,
+    "teacherId": 41
+  },
+  {
+    "id": 276,
+    "courseTypeId": 22,
+    "teacherId": 41
+  },
+  {
+    "id": 277,
+    "courseTypeId": 7,
+    "teacherId": 42
+  },
+  {
+    "id": 278,
+    "courseTypeId": 12,
+    "teacherId": 42
+  },
+  {
+    "id": 279,
+    "courseTypeId": 1,
+    "teacherId": 42
+  },
+  {
+    "id": 280,
+    "courseTypeId": 11,
+    "teacherId": 43
+  },
+  {
+    "id": 281,
+    "courseTypeId": 51,
+    "teacherId": 43
+  },
+  {
+    "id": 282,
+    "courseTypeId": 7,
+    "teacherId": 43
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Allow JS files */
+    "allowJs": true,
+    "checkJs": false,
+
+    /* Linting */
+    "strict": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noFallthroughCasesInSwitch": true,
+
+    /* Paths */
+    "baseUrl": "src",
+    "paths": {
+      "api/*": ["api/*"],
+      "assets/*": ["assets/*"],
+      "contexts/*": ["contexts/*"],
+      "hooks/*": ["hooks/*"],
+      "layout/*": ["layout/*"],
+      "menu-items/*": ["menu-items/*"],
+      "routes/*": ["routes/*"],
+      "store/*": ["store/*"],
+      "themes/*": ["themes/*"],
+      "types/*": ["types/*"],
+      "ui-component/*": ["ui-component/*"],
+      "utils/*": ["utils/*"],
+      "views/*": ["views/*"]
+    },
+
+    /* For imports */
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
